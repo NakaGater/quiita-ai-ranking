@@ -43,6 +43,8 @@ jobs:
 
       - name: Build static site
         run: npm run build
+        env:
+          PAGES_BASE_PATH: /quiita-ai-ranking
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
